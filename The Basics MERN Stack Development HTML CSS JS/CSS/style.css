@@ -1,0 +1,253 @@
+/* h1 {
+    color: green;
+    background-color: black;
+}
+
+h2 {
+    color: rgb(70, 200, 215);
+    background-color: black;
+}
+
+h3 {
+    color: rgb(223, 206, 47);
+    background-color: black;
+} */
+
+/* CSS boiler plate: It's not that necessary to write this boiler plate code, 
+but it's a good practice to write it. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+} */
+
+/* div {
+    background-color: rgb(130, 221, 237);
+    color: white;
+} */
+
+/* div {
+    height: 200px;
+    width: 600px;
+    background-color: rgb(130, 221, 237);
+} */
+
+/* #aamir {
+    color: white;
+    background-color: violet;
+} */
+
+/* .unique {
+    color: white;
+    background-color: rgb(130, 221, 237);
+} */
+
+
+/* #box {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(246, 192, 75);
+    margin: 30px;
+    padding-left: 20px;
+    padding-top: 200px;
+} */
+
+/* #parent {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(246, 192, 75);
+}
+
+#child {
+    height: 50%;
+    width: 50%;
+    background-color: rgb(130, 221, 237);
+} */
+
+/* button {
+    margin: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} */
+
+/* In above I has to write padding 4 times. 
+But there is another way of writing in short-hand as shown below: 
+1st two is top + bottom, 2nd two is left + right*/
+
+/* button {
+    margin: 40px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+} */
+
+/* or another way of writing is: 
+1st is top + bottom, 2nd is left + right*/
+
+/* button {
+    margin: 40px;
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: rgb(130, 221, 237);
+    color: white;
+    font-weight: 600;
+    border: 3px solid violet;
+    border: none;
+    border-radius: 30px;
+} */
+
+
+/* button {
+    margin: 40px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    font-weight: 600;
+    border: 3px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: seagreen;
+    color: white;
+    border: 3px solid rgb(130, 221, 237);
+}
+
+button:active {
+    background-color: rgb(130, 221, 237);
+    color: green;
+    border: 3px solid rgb(130, 221, 237);
+} */
+
+
+/* #box1 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(158, 246, 75);
+    border: 2px solid black;
+    
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#box2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(75, 243, 246);
+    border: 2px solid black;
+} */
+
+
+/* #box1 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(158, 246, 75);
+    border: 2px solid black;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#box2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(75, 243, 246);
+    border: 2px solid black;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+} */
+
+
+/* h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 200;
+}
+
+h1 span {
+    font-size: 50px;
+    font-weight: 600;
+    background-color: rgb(142, 232, 89);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+} */
+
+
+/* TOPIC: display flex */
+
+body {
+    background-color: #111;
+}
+
+#parent {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: start;
+    align-items: end;
+    align-items: center;
+    justify-content: start;
+    justify-content: end; 
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.child {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(130, 221, 237);
+    border: 3px solid #fff;
+}
+
+#child1 {
+    background-image: url(https://images.unsplash.com/photo-1638210574680-b30164f073f3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#child2 {
+    background-image: url(https://images.unsplash.com/photo-1667673551424-b04e396064f1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#child3 {
+    background-image: url(https://media.istockphoto.com/id/938177732/photo/silhouette-of-old-vintage-car-in-dark-foggy-toned-background-with-glowing-lights-in-low-light.jpg?s=612x612&w=0&k=20&c=K4T5WVzI68rmjMnrmj9KqWBK8aSG-ZCnJr9HEj5pvJs=);
+    background-size: cover;
+    background-position: center;
+}

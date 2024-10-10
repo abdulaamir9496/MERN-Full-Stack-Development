@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    /* height: 100%; */
+    width: 100%;
+    background-color: #D5FF3F;
+    padding: 50px 90px;
+}
+
+nav {
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+nav h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav a {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    /* background-color: red; */
+    /* padding: 60px 100px; */
+    padding-top: 90px;
+    
+}
+
+section .hero-text1 {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero-text1 h1 {
+    font-size: 180px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    line-height: 150px;
+}
+
+.hero-text1 .video {
+    height: 100px;
+    width: 400px;
+    background-color: orchid;
+    border-radius: 100px;
+    margin-top: 10px;
+    background-image: url(https://images.unsplash.com/photo-1715936743400-5b5c221dc41b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    /* background-position: right; */
+    padding: 7px;
+}
+
+.video .play {
+    height: 100%;
+    width: 90px;
+    background-color: rgb(36, 233, 173);
+    border-radius: 100px;
+    border: 4px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play i {
+    font-size: 40px;
+    color: #fff;
+}
+
+section .hero-text2 {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.hero-text2 h1 {
+    font-size: 180px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    line-height: 150px;
+}
+
+.hero-text2 p {
+    width: 580px;
+    font-size: 30px;
+    font-weight: 500;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.image {
+    height: 800px;
+    width: 100%;
+    background-color: rgb(227, 71, 211);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-image: url(https://img.freepik.com/premium-photo/abstract-3d-render-ballerina-curvy-extrusions-vivid-pastel-colors_685067-966.jpg?w=1060);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 200px;
+}
+
+.image .arrow {
+    height: 130px;
+    width: 130px;
+    background-color: #000;
+    border-radius: 100px;
+    border: 4px solid #cbc0c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5%;
+    top: -5%;
+}
+
+.arrow i {
+    height: 100%;
+    width: 100%;
+    font-size: 90px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
