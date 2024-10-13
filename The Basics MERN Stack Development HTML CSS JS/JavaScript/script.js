@@ -128,17 +128,133 @@
 // var a;
 // console.log(a);
 
-// //6. object:
-// var a = {
-//     name: 'John',
-//     age: 20,
-//     isMarried: false
-// };
+//6. object:
+var a = {
+    name: 'John',
+    age: 20,
+    isMarried: false
+};
+console.log(a);
+
+// NOTE: when you see below of these: That means we are talking about functions, arrays and objects:
+// () = function (function is a block of code that performs a specific task)
+// [] = array (array is a collection of elements)
+// {} = object (object is a collection of key(property)-value pairs)
+
+
+//Array of objects:
+// var a = [
+//     {name: 'John', age: 20, isMarried: false},
+//     {name: 'Jane', age: 21, isMarried: true}
+// ];
 // console.log(a);
+
+// //Accessing properties of object:
+// console.log(a[0].name);
+
+// //Accessing properties of array of objects:
+// console.log(a[1].name);
+
+// //Accessing properties of object inside array of objects:
+// console.log(a[0].age);
+
 
 // //7. array:
 // var a = [10, 20, 30, 40, 50, 60, 70, 80];
 // console.log(a);
+
+// console.log(a[0]);
+
+// console.log(a[1]);
+
+// //adding element in array:
+// a.push(90);
+// console.log(a);
+
+// //removing element from array:
+// a.pop();
+// console.log(a);
+
+// //finding length of array:
+// console.log(a.length);
+
+// //sorting array:
+// a.sort();
+// console.log(a);
+
+// //reversing array:
+// a.reverse();
+// console.log(a);
+
+// //removing first element from array:
+// a.shift();
+// console.log(a);
+
+// //adding element at the beginning of array:
+// a.unshift(10);
+// console.log(a);
+
+// //slicing array:
+// a.slice(2, 5);
+// console.log(a);
+
+// //adding element at specific position in array:
+// a.splice(2, 0, 100);
+// console.log(a);
+
+// //joining elements of array:
+// a.join('+');
+// console.log(a);
+
+// //splitting string into array:
+// a.split('+');
+// console.log(a);
+
+// //checking if element is present in array:
+// a.includes(100);
+// console.log(a);
+
+// //finding index of element in array:
+// a.indexOf(100);
+// console.log(a);
+
+// //finding last index of element in array:
+// a.lastIndexOf(100);
+// console.log(a);
+
+// //finding character at specific position in string:
+// a.charAt(0);
+// console.log(a);
+
+// //finding character code at specific position in string:
+// a.charCodeAt(0);
+// console.log(a);
+
+// //converting character code to string:
+// String.fromCharCode(72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100);
+// console.log(a);
+
+// //concatenating strings:
+// a.concat('Hello');
+// console.log(a);
+
+// //repeating string:
+// a.repeat(2);
+// console.log(a);
+
+// //trim string from start:
+// a.trimStart();
+// console.log(a);
+
+// //trim string from end:
+// a.trimEnd();
+// console.log(a);
+
+// //trim string:
+// a.trim();
+// console.log(a);
+
+
 
 // //8. function:
 // function add(a, b) {
@@ -477,4 +593,125 @@
 // var b = a.pad(15, 'H');
 // console.log(b);
 
+
+//Frontend ki javascript mein hume bahut sare functions milte hain jo backend mein nahi milte.
+//Backend ki javascript mein hume bahut sare libraries milte hain jo frontend mein nahi milte.
+
+//MERN Stack:
+//MongoDB, Express, React, Node.js
+
+//MEAN Stack:
+//MongoDB, Express, Angular, Node.js
+
+//MERN Stack Development:
+//MongoDB, Express, React, Node.js
+
+//MERN Stack Development is a full stack development framework that allows you to develop web applications using MongoDB, Express, React, and Node.js.
+
+//Frontend ki javascript ko hum kehte hai DOM(Document Object Model):
+//DOM is a programming interface that allows us to create, change, or remove elements from the document.
+
+//Frontend mein hume bahut sare HTML elements milte hain jo DOM mein bhi milte hain.
+
+//HTML is a markup language that defines the structure of a web page.
+//CSS is a styling language that defines the style of a web page.
+//JS is a scripting language that defines the behavior of a web page.
+
+//What are the 4 pillars of DOM ?
+//1. Selection of elements
+//2. Event handling
+//3. Manipulation/ Changing of HTML elements
+//4. Manipulation/ Changing of CSS(Animation) elements
+//5. Manipulation/ Changing of JavaScript elements
+
+//NOTE: We will learn about all these in detail in upcoming classes.
+
+//Selection of elements:
+//We can select elements from the document using DOM.
+
+//Selecting an element using querySelector:
+//querySelector selects the first element that matches the specified CSS selector.
+
+// var h1 = document.querySelector('h1');
+// console.log(h1);
+
+//NOTE: querySelector is used to select a single element from the document.
+
+//Changing the style of an element:
+//We can change the style of an element using DOM.
+//Changing the style of an element using style attribute:
+//We can change the style of an element using style attribute.
+
+//change the color of h1 element:
+// h1.style.color = 'red';
+
+//change the background color of h1 element:
+// h1.style.backgroundColor = 'yellow';
+
+//change the font size of h1 element:
+// h1.style.fontSize = '50px';
+
+//change the font family of h1 element:
+// h1.style.fontFamily = 'Arial';
+
+//change the font weight of h1 element:
+// h1.style.fontWeight = 'bold';
+
+//change the innerHTML of h1 element:
+// h1.innerHTML = 'Hello World';
+
+//change the text content of h1 element:
+// h1.textContent = 'Hello World';
+
+//NOTE: innerHTML and textContent both are used to change the content of an element.
+//innerHTML is used to change the content of an element including HTML tags.
+//textContent is used to change the content of an element without including HTML tags.
+
+//selection of elements using DOM:
+//document.querySelector('h1');
+//document.querySelectorAll('h1');
+
+//selection of elements using getElementById:
+// var h1 = document.getElementById('heading');
+// console.log(h1);
+
+//selection of elements using getElementsByClassName:
+// var h1 = document.getElementsByClassName('heading');
+// console.log(h1);
+
+//selection of elements using getElementsByTagName:
+// var h1 = document.getElementsByTagName('h1');
+// console.log(h1);
+
+//selection of an element using querySelector:
+// var h1 = document.querySelector('#heading');
+// console.log(h1);
+
+//selection of elements using querySelectorAll:
+// var h1 = document.querySelectorAll('#heading');
+// console.log(h1);
+
+//NOTE: querySelector and querySelectorAll both are used to select elements from the document.
+//querySelector selects the first element that matches the specified CSS selector.
+//querySelectorAll selects all elements that match the specified CSS selector and returns a static NodeList.
+
+
+//What is Event Listener ?
+//Event Listener is a function that listens for events and executes a callback function when the event occurs.
+
+//Event Listener is used to handle user interactions with the web page.
+
+//What is event ?
+//Event is an action that occurs in the web page.
+
+//What are the types of events in JavaScript ?
+//1. Mouse Events
+//2. Keyboard Events
+//3. Form Events
+//4. Window Events
+
+//NOTE: We will learn about all these in detail in upcoming classes.
+
+var h1 = document.querySelector('h1');
+console.log(h1);
 
