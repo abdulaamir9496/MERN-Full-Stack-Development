@@ -129,12 +129,12 @@
 // console.log(a);
 
 //6. object:
-var a = {
-    name: 'John',
-    age: 20,
-    isMarried: false
-};
-console.log(a);
+// var a = {
+//     name: 'John',
+//     age: 20,
+//     isMarried: false
+// };
+// console.log(a);
 
 // NOTE: when you see below of these: That means we are talking about functions, arrays and objects:
 // () = function (function is a block of code that performs a specific task)
@@ -712,6 +712,94 @@ console.log(a);
 
 //NOTE: We will learn about all these in detail in upcoming classes.
 
-var h1 = document.querySelector('h1');
-console.log(h1);
+// var h1 = document.querySelector('h1');
+// console.log(h1);
+
+// h1.addEventListener('click', function() {
+//     console.log('h1 clicked');
+// })
+
+// h1.addEventListener('click', function() {
+//     console.log('Changed');
+// })
+
+// h1.addEventListener('mouseover', function() {
+//     console.log('h1 mouseover');
+// })
+
+// h1.addEventListener('mouseout', function() {
+//     console.log('h1 mouseout');
+// })
+
+// h1.addEventListener('mousemove', function() {
+//     console.log('h1 mousemove');
+// })
+
+// h1.addEventListener('mousedown', function() {
+//     console.log('h1 mousedown');
+// })
+
+// h1.addEventListener('mouseup', function() {
+//     console.log('h1 mouseup');
+// })
+
+// h1.addEventListener('dblclick', function() {
+//     console.log('h1 dblclick');
+// })
+
+// h1.addEventListener('contextmenu', function() {
+//     console.log('h1 contextmenu');
+// })
+
+// h1.addEventListener('mouseenter', function() {
+//     console.log('h1 mouseenter');
+// })
+
+// h1.addEventListener('mouseleave', function() {
+//     console.log('h1 mouseleave');
+// })
+
+//Example: 1
+// var h1 = document.querySelector('h1');
+
+// h1.addEventListener('click', function() {
+//     h1.innerHTML = 'Changed';
+//     h1.style.color = 'red';
+//     h1.style.backgroundColor = 'yellow';
+// })
+
+//Example: 2
+// var h1 = document.querySelector('h1');
+
+// h1.addEventListener('mouseenter', function() {
+//     h1.innerHTML = 'Mouse Entered';
+//     h1.style.color = 'seagreen';
+//     h1.style.backgroundColor = 'lightblue';
+// });
+
+//Example: 2
+// var h1 = document.querySelector('h1');
+
+// h1.addEventListener('mouseleave', function() {
+//     h1.innerHTML = 'Mouse Left';
+//     h1.style.color = 'black';
+//     h1.style.backgroundColor = 'white';
+// });
+
+//Example: 3
+// var h1 = document.querySelector('h1');
+
+// h1.addEventListener('dblclick', function() {
+//     h1.style.color = 'purple';
+//     h1.style.backgroundColor = 'pink';
+// })
+
+//Example: 4
+// var h1 = document.querySelector('h1');
+
+// h1.addEventListener('click', function() {
+//     console.log('clicked');
+//     h1.style.color = 'purple';
+//     h1.style.backgroundColor = 'pink';
+// })
 
