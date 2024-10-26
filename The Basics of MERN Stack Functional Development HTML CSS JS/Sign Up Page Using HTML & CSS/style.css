@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 16px;
+    background-color: white;
+}
+input[type=text],type[type=email],input[type=password] {
+    width: 100%;
+    padding: 15%;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+}
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.registerbtn {
+    background-color: turquoise;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.registerbtn:hover {
+    opacity: 1;
+}
+a {
+    color: blue;
+}
