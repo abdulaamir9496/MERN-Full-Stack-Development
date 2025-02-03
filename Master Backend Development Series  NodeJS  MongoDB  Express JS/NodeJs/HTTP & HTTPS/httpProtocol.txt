@@ -1,0 +1,32 @@
+//HTTP protocols:
+//How HTTP protocols work ?
+//The HTTP protocol is a request-response protocol, which means that the client (usually a web browser)
+// sends an HTTP request to the server and the server responds with an HTTP response.
+
+//It is a protocol, which has set of rules which has to be applied/ followed.
+//Without following rules, the server will not respond.
+//We can't send anything and we cannot receive anything.
+
+Ex: because of HTTP protocol, I am able to see the video on youtube from server, someone has uploaded.
+from someone else to server and from server to my local machine?
+without HTTP protocol internet will not work. this is also one of the rules.
+
+How to use HTTP protocol?
+//To use the HTTP protocol, you need to follow these steps:
+//1. Open a web browser (e.g. Google Chrome, Mozilla Firefox)
+//2. Type the URL of the website you want to visit in the address bar
+//3. Press Enter to send the request to the server
+//4. The server will respond with the requested data (e.g. HTML, images, videos)
+//5. The browser will render the data and display it to you
+//6. You can interact with the website by clicking on links, submitting forms, etc.
+//7. The browser will send another request to the server to retrieve the requested data
+//8. The server will respond with the requested data and the browser will render it.
+//9. This process continues until you close the browser.
+
+//HTTP protocol is used for communication between client and server.
+//It is a request-response protocol.
+//The client sends a request to the server and the server responds with a response.
+//The client and server communicate using HTTP protocol.
+//HTTP protocol is used for communication between client and server.
+
+const http = require('http')

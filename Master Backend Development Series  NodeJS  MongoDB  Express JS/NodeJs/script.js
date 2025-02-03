@@ -47,3 +47,31 @@ const fs = require('fs');   //we can write this way also.
 //     else console.log("Done");
 // })
 
+// fs.unlink (Deleting file)
+//fs.unlink(path, callback)
+
+// fs.unlink('./copy/copy.txt', function(err) {
+//     if(err) console.error(err);
+//     else console.log("Removed");
+// })
+
+// fs.rmdir : means remove directory (removing folders, it gives permissions to remove by default blank folders. It the folder has something in it then it doesn't give permission to remove it.)
+// fs.rmdir(path[, options], callback)
+
+// fs.rmdir("./emptyFolder", function(err) {
+//     if(err) console.error(err);
+//     else console.log("Empty Folder Removed");
+// })
+
+//If we use recursive: true it will remove empty folder, even it has content in it(folder > file), it will remove it.
+// fs.rm("./emptyFolder", {recursive: true}, function(err){
+//     if(err) console.error(err);
+//     else console.log("Removed empty folder")
+// })
+
+//If we use recursive: false it will not remove content folder > file
+// fs.rm("./emptyFolder", {recursive: true}, function(err){
+//         if(err) console.error(err);
+//         else console.log("Removed empty folder")
+// })
+
