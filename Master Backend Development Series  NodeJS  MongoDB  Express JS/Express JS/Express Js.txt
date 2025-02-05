@@ -1,0 +1,14 @@
+Express.js Framework
+
+Introduction to Express.js
+express js is a npm package manager
+Framework
+manages everything from receiving the request to the server and sending the response
+
+
+Setting up a basic Express JS application
+Routing
+
+Middleware
+Request and response handling
+Error handling
