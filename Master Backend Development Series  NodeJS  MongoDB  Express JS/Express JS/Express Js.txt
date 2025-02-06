@@ -44,4 +44,4 @@ for tasks like routing or API request handling.
 Request and response handling  (frontend --> backend --> frontend)  ✅
 frontend (1st we write URL in browser) --> backend (server) --> frontend (response is sent back to browser)  ✅
 
-Error handling 
+Error handling ✅
