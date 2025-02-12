@@ -1,0 +1,32 @@
+Form Handling, Sessions & Cookies
+
+form handling and working with the forms
+express side and backend side what we have to change ?
+if we are using any v8 engine, handle bars, jade, or bug then how to change backend side ?
+
+handle backend process of forms and making sure the data coming from any frontend
+lib, fw(framework), templating engines. We still handle it at the backend process.
+
+install cookie parcel.
+
+what is session and cookie ?
+in frontend browser whatever stored is called cookie
+on the basis of cookie we are connected with server (jo yeh taar hai) we call for this as session
+
+when we remove cookie from frontend
+cookie not only help in logging in, it also works like the data stored in my local machine is called cookie
+we use cookie majorly in authentication
+
+when we logout the session will be ended.
+when we login again new session will be created
+from login to logout is been called as 1 session.
+
+If we have to login and get authentication every time we login for that purpose are learning about the session and cookie
+we can keep any data in frontend browser.
+whenever we request for any data from backend 
+
+we have these 2 lines of code to make it readable to the backend.
+app.use(express.json());  //this line of code makes json data readable, convert data to json string and return.
+app.use(express.urlencoded({extended: true}));  //convert data to url encoded string and return.
+
+if we remove these either of 2 lines of code, data will not be readable in json format and will not readable in x-www-form-urlencoded
