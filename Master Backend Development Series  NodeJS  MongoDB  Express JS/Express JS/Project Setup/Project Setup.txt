@@ -1,0 +1,14 @@
+initialize a project with npm
+express install
+
+setting up parsers for form
+    install ejs from npm 
+    setup ejs as a view engine
+setting up ejs for ejs pages(frontend whatever we see is our ejs)
+we can perform dynamic initialization and calculations in ejs pages, which HTML can't do.
+
+setting up public static files
+
+dynamic routing
+    dynamic routing
+    how to get data coming from frontend at backend route
