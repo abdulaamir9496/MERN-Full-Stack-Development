@@ -12,3 +12,5 @@ setting up public static files
 dynamic routing
     dynamic routing
     how to get data coming from frontend at backend route
+
+    
