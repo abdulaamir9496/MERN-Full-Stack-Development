@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900">
+        <div class="form p-10 text-white">
+            <form action="/create" method="post">
+                <input  class="block w-full rounded-md outline-none px-5 py-2 bg-zinc-800" type="text" placeholder="Title Goes Here..." name="title">
+                <textarea   class="block w-full rounded-md outline-none px-5 py-2 bg-zinc-800 resize-none mt-2" placeholder="Write Your Task Details Here..." name="details"></textarea>
+                <input class="mt-2 bg-blue-600 px-5 py-2 rounded-md" type="submit" value="Create Task">
+            </form>
+        </div>
+        <div class="tasks p-10 flex flex-wrap gap-5">
+            <!-- EJS Template: We are not using = sign because we are not rendering any data from the server. We use = sign when we want to render data from the server. and we use <% %> when we want to write some logic. -->
+            <% if(files.length > 0) { %>
+                <% files.forEach(function(val) { %>
+                    <div class="task min-w-72 px-5 py-2 bg-zinc-800 rounded-md mt-2">
+                        <h1 class="text-white text-3xl tracking-tighter"><%= val %></h1>
+                        <a class="text-blue-500 inline-block mt-3" href="/file/<%= val %>">Read More.</a>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <h3 class="text-zinc-600">No tasks available yet.</h3>
+            <% } %> 
+        </div>
+    </div>
+</body>
+</html>
