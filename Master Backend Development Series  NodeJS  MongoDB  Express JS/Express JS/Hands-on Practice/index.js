@@ -30,4 +30,11 @@ app.post('/create', (req, res) => {
     });
 });
 
+app.delete('/delete/:filename', (req, res) => {
+    // console.log(req.params.filename);
+    fs.unlink(`./files/${req.params.filename}`, function(err) {
+        res.redirect('/');
+    });
+});
+
 app.listen(3000);
