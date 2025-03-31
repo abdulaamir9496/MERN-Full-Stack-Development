@@ -1,0 +1,81 @@
+### ✅ **Networking Terminologies Explained:**  
+
+1. **Server:**  
+   - A **computer or system** that provides services or resources to other devices (clients) over a network.  
+   - **What it does:** Hosts websites, apps, or databases.  
+   - **Example:**  
+     - A **web server** hosts your website and serves it to users.  
+     - A **database server** stores and retrieves data.  
+
+2. **Host:**  
+   - Any **device connected to a network** with an IP address.  
+   - Can be a **server, computer, or IoT device**.  
+   - **What it does:** Sends or receives data over the network.  
+   - **Example:**  
+     - Your **laptop** is a host when it connects to the internet.  
+     - A **web server** is also a host.  
+
+3. **Localhost:**  
+   - Refers to the **current machine** (your own computer).  
+   - IP address: `127.0.0.1`.  
+   - **What it does:** Used for **local testing** and development.  
+   - **Example:**  
+     - Running `localhost:3000` displays your React app locally.  
+     - You can make API calls to `localhost` during development.  
+
+4. **Ports:**  
+   - **Virtual endpoints** for communication between devices.  
+   - Each port is assigned a **number** (0-65535).  
+   - **What it does:**  
+     - Allows multiple services to run on the same machine.  
+   - ✅ **Common ports:**  
+     - `80`: HTTP  
+     - `443`: HTTPS  
+     - `27017`: MongoDB  
+     - `3000`: React app (development server)  
+
+5. **How the Internet Works:**  
+   - The **internet** is a global network of connected devices.  
+   - **Process flow:**  
+     - Your device sends a request via **HTTP/HTTPS**.  
+     - The request goes through **routers and servers**.  
+     - The server processes it and sends back the response.  
+   - ✅ **Key Components:**  
+     - **DNS (Domain Name System):** Translates domain names into IP addresses.  
+     - **IP Address:** Uniquely identifies devices on the network.  
+     - **Protocols:** Set rules for communication (e.g., HTTP, FTP).  
+
+6. **HTTP (HyperText Transfer Protocol):**  
+   - A **protocol** used for transmitting data (web pages) over the internet.  
+   - **What it does:**  
+     - Sends **requests** and receives **responses**.  
+   - ❌ **Not secure** → Data is transferred in **plain text**.  
+   - **Example:**  
+     - `http://example.com` → Unsecured website.  
+
+7. **HTTPS (HyperText Transfer Protocol Secure):**  
+   - A **secure version** of HTTP.  
+   - Uses **SSL/TLS encryption** to protect data.  
+   - ✅ **What it does:**  
+     - Ensures **data privacy and security**.  
+   - **Example:**  
+     - `https://google.com` → Secure website.  
+
+8. **MAC Address (Media Access Control):**  
+   - A **unique identifier** assigned to a network device’s **NIC (Network Interface Card)**.  
+   - **What it does:**  
+     - Identifies devices on a **local network**.  
+     - Format: `00:1A:2B:3C:4D:5E`.  
+   - **Example:**  
+     - Your Wi-Fi router uses **MAC addresses** to identify connected devices.  
+
+9. **IP Address (Internet Protocol Address):**  
+   - A **unique identifier** for devices on a network.  
+   - **What it does:**  
+     - Enables devices to **communicate** over the internet.  
+   - ✅ **Types:**  
+     - **IPv4:** 32-bit format (e.g., `192.168.1.1`).  
+     - **IPv6:** 128-bit format (e.g., `2001:0db8::1`).  
+   - **Example:**  
+     - Your public IP (`103.102.45.67`) identifies your device online.  
+     - Local IP (`192.168.0.1`) is used within your home network.

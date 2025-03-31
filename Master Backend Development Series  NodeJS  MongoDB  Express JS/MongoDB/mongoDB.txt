@@ -1,0 +1,224 @@
+1. Data Storage:
+The data storage system is designed to store and manage the data collected from the sensors. The system consists of a database that stores the data in a structured format, allowing for easy querying and analysis.
+
+2. TYPES OF DBS - SQL | NoSQL (Not Only SQL)
+
+SQL - data ko ek roop mein rakhna - tables
+NoSQL - No tables, Data objects {}  mein store hota hai. We will be learning about NoSQL - mongoDB (DataBase name) follows NoSQL theory. NoSQL is a concenpt ex: Tree (Like: Mango Tree, Apple Tree). Tree is a concept like same NoSQL is a concept.
+
+There are several types of databases that can be used for data storage, including:
+1. Relational databases: These databases store data in tables with well-defined relationships between them. They
+are suitable for storing structured data and are widely used in many applications.
+2. NoSQL databases: These databases store data in a variety of formats, such as key-value pairs, documents, or graphs. They are suitable for storing unstructured or semi-structured data
+3. Time-series databases: These databases are optimized for storing and querying time-stamped data. They
+are suitable for applications that require fast and efficient storage and retrieval of time-stamped data.
+4. Graph databases: These databases store data as nodes and edges, allowing for efficient querying of relationships
+between data entities.
+
+
+
+3. what and why mongoDB ?
+MongoDB is used because it is a **NoSQL database** that offers:  
+- **Flexibility:** Stores data in **JSON-like documents**, making it easy to handle dynamic or unstructured data.  
+- **Scalability:** Supports **horizontal scaling** for handling large datasets.  
+- **Speed:** Faster read/write operations for big data applications.  
+- **Schema-less:** No fixed schema, making it adaptable for changing data structures.  
+- **Easy Integration:** Works well with **JavaScript-based tech stacks** like MERN.
+
+
+4. terminologies - collections, documents, schemas, keys, models
+Here’s a breakdown of the **MongoDB terminologies** you asked for:  
+
+1. **Collection:**  
+   - A **group of documents**, similar to a table in relational databases.  
+   - Example: A `users` collection contains multiple user documents.  
+
+2. **Document:**  
+   - A **record** in the collection, stored in **JSON-like format** (BSON – Binary JSON).  
+   - Example:  
+   ```json
+   { "name": "Aamir", "age": 28, "email": "aamir@gmail.com" }
+   ```  
+
+3. **Schema:**  
+   - The **structure or blueprint** that defines how documents should be organized (e.g., field names, data types).  
+   - In **Mongoose** (ODM for MongoDB in Node.js), schemas help enforce a consistent structure.  
+   - Example:  
+   ```javascript
+   const userSchema = new mongoose.Schema({
+     name: String,
+     age: Number,
+     email: String
+   });
+   ```
+
+4. **Key:**  
+   - A **field name** in a document that holds a value.  
+   - Example: In `{ "name": "Aamir", "age": 28 }`,  
+     - `name` and `age` are **keys**.  
+     - `Aamir` and `28` are the **values**.  
+
+5. **Model:**  
+   - A **constructor function** created from a schema, used to interact with a MongoDB collection.  
+   - Models allow you to **create, read, update, and delete** documents.  
+   - Example:  
+   ```javascript
+   const User = mongoose.model('User', userSchema);
+   ```  
+   Here, `User` is the model representing the `users` collection in MongoDB.
+
+**************************************************************************************************
+In the backend, there are mainly three types of servers:
+
+**what each server does** and **what you can do with them**:
+
+1. **Web Server:**  
+   - **What it does:**  
+     - Handles **HTTP/HTTPS requests** from clients (browsers).  
+     - Serves **static content** (HTML, CSS, JS) and forwards dynamic requests to the application server.  
+   - ✅ **What you can do with it:**  
+     - Host and serve your website or web app.  
+     - Implement **load balancing** and reverse proxy.  
+     - Optimize **caching** for faster performance.  
+   - **Examples:** **Apache, NGINX, Express.js**.  
+
+2. **Application Server:**  
+   - **What it does:**  
+     - Handles the **business logic** of your application.  
+     - Processes requests, interacts with the database, and sends responses.  
+   - ✅ **What you can do with it:**  
+     - Implement **APIs** and manage data flow.  
+     - Perform **data processing** and validation.  
+     - Handle **authentication and authorization**.  
+   - **Examples:** **Node.js, Django, Spring Boot**.  
+
+3. **Database Server:**  
+   - **What it does:**  
+     - Stores, retrieves, and manages **application data**.  
+     - Provides data to the application server.  
+   - ✅ **What you can do with it:**  
+     - Perform **CRUD operations** (Create, Read, Update, Delete).  
+     - Store **user info, logs, and session data**.  
+     - Run **queries and aggregations** to analyze data.  
+   - **Examples:** **MongoDB, MySQL, PostgreSQL**.
+
+
+Servers: 2 types
+Application Server: 
+Handles routes, accepts request, sends response back to user for whatever he asked.
+Apart from database related works it does everthing. For database server it ask for database.
+****************************************************************
+DataBase Server: 
+
+### ✅ **What is a Collection in MongoDB?**  
+A **collection** is a **group of documents** in MongoDB, similar to a **table** in relational databases.  
+- It **stores multiple documents** with similar or different structures.  
+- **No strict schema** → You can add fields dynamically.  
+
+### 🔥 **Example of a Collection:**  
+Imagine you’re building a **student management system**.  
+You can have a collection named `students`, where each **document** represents an individual student.  
+
+### 🛠️ **Example Collection: `students`**
+```json
+[
+  { "name": "Aamir", "age": 28, "course": "MERN" },
+  { "name": "Sara", "age": 25, "course": "Data Science" },
+  { "name": "John", "age": 30, "course": "AI/ML" }
+]
+```
+- **Collection name:** `students`  
+- **Documents:** Individual student records.  
+
+### ✅ **More Collection Examples:**  
+
+1. **E-commerce App:**  
+   - `products`: Stores product details.  
+   ```json
+   { "name": "Laptop", "price": 50000, "brand": "Dell" }
+   ```
+   - `users`: Stores user information.  
+   ```json
+   { "username": "aamir123", "email": "aamir@gmail.com" }
+   ```
+
+2. **Blog Website:**  
+   - `posts`: Contains blog posts.  
+   ```json
+   { "title": "MongoDB Basics", "author": "Aamir", "content": "Introduction to collections" }
+   ```
+   - `comments`: Stores comments for blog posts.  
+   ```json
+   { "post_id": "123", "user": "Sara", "comment": "Great article!" }
+   ```  
+
+✅ **Key Takeaway:**  
+- A **collection** groups related documents.  
+- Each **document** is a JSON-like object containing key-value pairs.  
+- MongoDB collections are **schema-less**, meaning documents can have different fields.
+****************************************************************
+What's inside collections ?
+A **collection** in MongoDB contains **documents**.  
+- **Documents** are **JSON-like objects** with **key-value pairs**.  
+- Each document can have **different fields and data types**.  
+
+✅ **Example:**  
+Collection: `users`  
+```json
+{ "name": "Aamir", "age": 28, "email": "aamir@gmail.com" }
+```  
+- **Keys:** `name`, `age`, `email`  
+- **Values:** `"Aamir"`, `28`, `"aamir@gmail.com"`
+****************************************************************
+What happens at a code level ?
+
+CODE                    DATABASE
+---------------------  -------------------
+mongoose.connect     -> database create
+model create         -> collection create
+CREATE code          -> document create
+
+when we connect mongoose.connect => database is created. when we create a model => collection is created. when we insert a document => document is inserted into the collection. when we update a document => document is updated in the collection. when we delete a document => document is deleted from the collection. when we query a collection => mongoose returns the documents from the collection. when we use aggregate => mongoose applies the aggregate pipeline to the collection. when we us find() => mongoose returns the documents from the collection that match the query. when we use update() => mongoose updates the documents in the collection that match the query. when we use remove() => mongoos 
+javascript
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/mydatabase', { useNewUrlParser: true, useUnifiedTopology
+: true });
+const userSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+    email: String
+    });
+    const User = mongoose.model('User', userSchema);
+****************************************************************
+javascript
+When we connect to a MongoDB database using Mongoose, the following happens:
+1.  **Database creation**: If the database does not exist, Mongoose creates it
+2.  **Model creation**: When we define a model using `mongoose.model()`,
+Mongoose creates a collection in the database with the same name as the model
+3.  **Document insertion**: When we insert a document using `model.save()` or
+`model.create()`, Mongoose inserts the document into the corresponding collection
+4.  **Document update**: When we update a document using `model.update()`,
+Mongoose updates the document in the collection
+5.  **Document deletion**: When we delete a document using `model.remove()`,
+Mongoose deletes the document from the collection
+6.  **Query execution**: When we query a collection using `model.find()` or
+`model.findOne()`, Mongoose returns the documents from the collection that match the query
+7.  **Aggregate pipeline execution**: When we use `model.aggregate()`, Mongoos
+executes the aggregate pipeline on the collection
+8.  **Update execution**: When we use `model.update()`, Mongoose updates
+the documents in the collection that match the query
+9.  **Remove execution**: When we use `model.remove()`, Mongoose deletes
+the documents from the collection that match the query
+***************************************************************
+When you insert a document into a collection, MongoDB performs the following operations:
+1. **Validation**: Ensures the document conforms to the collection's schema (if defined).
+2. **Data type conversion**: Converts the document's fields to the corresponding data types (e.g, string, integer, date).
+3. **Indexing**: Creates an index on the document's fields (if indexing is enabled).
+4. **Storage**: Stores the document in the collection's storage engine (e.g., WiredTer, In-Memory).
+****************************************************************
+What are the benefits of MongoDB's schema-less design ?
+1. **Flexibility**: Documents can have different fields and data types, making it easy to adapt to changing data structures.
+2. **Scalability**: Schema-less design allows for horizontal scaling, as new fields can b
+e added without affecting existing data.
+3. **Improved data integrity**: By not enforcing a rigid schema, MongoDB reduces the risk of data inconsistencies and errors.
+****************************************************************
