@@ -1,0 +1,24 @@
+mongoDB Installation
+mongoDB connection
+schema
+model
+CRUD operations
+
+
+mongoDB connection
+
+ ### ✅ **ORM vs ODM:**  
+
+1. **ORM (Object-Relational Mapping):**  
+   - Used for **SQL databases** (e.g., MySQL, PostgreSQL).  
+   - **Maps objects to relational tables**.  
+   - **Examples:** Sequelize, TypeORM.  
+
+2. **ODM (Object-Document Mapping):**  
+   - Used for **NoSQL databases** (e.g., MongoDB).  
+   - **Maps objects to documents**.  
+   - **Examples:** Mongoose, Prisma.  
+
+✅ **Key Difference:**  
+- **ORM** → For **SQL** (table-based databases).  
+- **ODM** → For **NoSQL** (document-based databases).
