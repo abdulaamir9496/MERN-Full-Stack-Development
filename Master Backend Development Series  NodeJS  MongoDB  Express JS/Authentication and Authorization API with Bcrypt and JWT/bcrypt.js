@@ -20,7 +20,7 @@ app.get('/', () => {
         
         // Example of hashing a password: encrpting the password
         bcrypt.hash("wonderString", salt, function(err, hash) {
-            if (err) {
+            if (err) { 
                 console.error('Error hashing password:', err);
                 return;
             }
