@@ -1,0 +1,34 @@
+What is JWT ?
+### **What is JWT (JSON Web Token)?** 🔐  
+
+JWT (**JSON Web Token**) is a secure way to transmit authentication data between a client (frontend) and a server (backend). It is mainly used for **user authentication and authorization** in web applications.  
+
+---
+
+### **1️⃣ How JWT Works?**  
+1. **User Logs In** → The backend verifies credentials and generates a JWT.  
+2. **Token is Sent to the Frontend** → Stored in cookies or localStorage.  
+3. **User Makes Requests** → The frontend includes the JWT in API requests.  
+4. **Backend Verifies the JWT** → If valid, access is granted; otherwise, it's denied.  
+
+---
+
+### **2️⃣ JWT Structure**  
+A JWT consists of three parts:  
+1. **Header** → Contains the token type (`JWT`) and algorithm (`HS256`).  
+2. **Payload** → Stores user data (e.g., `userID`, `role`).  
+3. **Signature** → Ensures the token hasn't been tampered with.  
+
+---
+
+### **3️⃣ Why Use JWT in MERN?**  
+✅ **Stateless Authentication** → No need to store sessions on the server.  
+✅ **Secure** → Can be signed and verified to prevent unauthorized access.  
+✅ **Fast** → Reduces database queries for authentication.  
+
+---
+
+### **4️⃣ Where to Store JWT?**  
+- **Cookies (httpOnly)** → Secure, prevents XSS attacks.  
+- **LocalStorage** → Less secure, vulnerable to JavaScript attacks.  
+-----------------------------------------------------------------------------------

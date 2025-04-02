@@ -1,0 +1,38 @@
+### **Authentication & Authorization in MERN**  
+
+1. **Authentication** 🔑  
+   - It verifies **who** the user is.  
+   - The user provides credentials (email & password).  
+   - The backend **validates** these credentials.  
+   - If correct, the system grants access and generates a **JWT token** (JSON Web Token).  
+   - The frontend stores the token for future requests.  
+
+2. **Authorization** 🔐  
+   - It determines **what** a user can access.  
+   - Based on user roles (e.g., **admin, user**), the system decides if the user has permission to access certain resources.  
+   - The backend checks the **JWT token** sent in requests.  
+   - If the token is valid and the user has the required role, access is granted; otherwise, it’s denied.  
+
+### **How It Works in MERN Stack?**
+1️⃣ **User signs up & logs in → Backend verifies credentials**  
+2️⃣ **Backend generates a JWT token & sends it to the frontend**  
+3️⃣ **Frontend stores the token (localStorage/cookies)**  
+4️⃣ **For protected routes, the frontend sends the token in API requests**  
+5️⃣ **Backend checks the token & grants/denies access**  
+
+🔹 **Authentication → Login system using JWT**  
+🔹 **Authorization → Role-based access control (Admin/User, etc.)**  
+-------------------------------------------------------------------------
+### **Authentication in MERN** 🔑  
+
+Authentication is the process of verifying a user's identity.  
+
+### **How It Works?**  
+1️⃣ **User enters credentials** (email & password).  
+2️⃣ **Backend (Node.js + Express) checks credentials** using bcrypt.js (password hashing).  
+3️⃣ **If valid, a JWT (JSON Web Token) is generated** and sent to the frontend.  
+4️⃣ **Frontend stores the JWT** (localStorage or cookies) for future requests.  
+5️⃣ **For every protected request, the JWT is sent** to the backend for verification.  
+
+✅ Ensures that only authenticated users can access protected resources.  
+------------------------------------------------------------------------

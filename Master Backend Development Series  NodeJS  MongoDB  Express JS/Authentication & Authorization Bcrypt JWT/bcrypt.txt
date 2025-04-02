@@ -1,0 +1,26 @@
+How to use bcrypt - for encryption and decryption ?
+### **How to Use `bcrypt` for Encryption & Decryption?** 🔐  
+
+`bcrypt` is a hashing algorithm used for securely storing passwords in databases. It does **not** support decryption, only **hashing and verification**.
+
+---
+
+### **1️⃣ How `bcrypt` Works?**  
+1. **Hashing (Encryption)** → Converts a password into a unique, irreversible string.  
+2. **Salting** → Adds a random string (salt) to the password before hashing to prevent attacks.  
+3. **Verification (Comparison)** → When a user logs in, `bcrypt` compares the entered password with the stored hash.
+
+---
+
+### **2️⃣ Why `bcrypt` is Secure?**  
+✅ **One-Way Encryption** → Can't be decrypted (only verified).  
+✅ **Uses Salting** → Protects against dictionary and rainbow table attacks.  
+✅ **Slow Hashing Process** → Makes brute-force attacks difficult.  
+
+---
+
+### **3️⃣ When to Use `bcrypt` in MERN?**  
+- **During User Registration** → Hash the password before saving it in the database.  
+- **During Login** → Compare the entered password with the stored hash to authenticate users.  
+
+--------------------------------------------------------------------------
