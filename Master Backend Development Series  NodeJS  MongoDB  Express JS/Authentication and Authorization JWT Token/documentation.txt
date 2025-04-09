@@ -1,0 +1,10 @@
+Backend: 
+create user account
+    mongoose connected ✅
+    schema created ✅
+    model created ✅
+    createuser -> password -> hash (save)
+    create JWT token -> cookie for frontend
+
+frontend:
+    login -> token -> decrypt (when we decrypt) -> email (we get mail)

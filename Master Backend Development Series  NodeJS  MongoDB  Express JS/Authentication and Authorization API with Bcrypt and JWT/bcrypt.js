@@ -9,7 +9,6 @@ const app = express();
 //         });
 //     });
 // });
-
 app.get('/', () => {
     bcrypt.genSalt(10, function(err, salt) {
         if (err) {
@@ -28,8 +27,6 @@ app.get('/', () => {
         });
     });
 });
-
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
-
