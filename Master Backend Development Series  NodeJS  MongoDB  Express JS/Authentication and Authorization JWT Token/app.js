@@ -1,10 +1,11 @@
+// Creating the app and server setup:
 const express = require('express');
 const app = express();
 const userModule = require('./models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-
+// Creatnig cookies for storing data: 
 const cookieParser = require('cookie-parser');
 const path = require('path');
 
@@ -42,11 +43,22 @@ app.post('/create', (req, res) => {
     });
 });
 
-app.post('/login', async (req, res) => {
-    let user = await userModule.fineOne({email: req.body.email});
+app.get('/login', async (req, res) => {
     res.render('login');
 });
 
+app.post('/login', async (req, res) => {
+    let user = await userModule.findOne({ email: req.body.email });
+    if(!user) {
+        return res.send("User not found");
+    }
+    // console.log(user.password, req.body.password);
+    // console.log(user);
+    bcrypt.compare(req.body.password, user.password, (err, result) => {
+        // res.send()
+        if(result) res.send("Yes you can login");
+    });
+});
 
 
 app.get('/logout', (req, res) => {
